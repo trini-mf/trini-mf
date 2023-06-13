@@ -1,5 +1,12 @@
 ### Hi there 👋
 
+### ¿PARA QUE ES ESTA PROPUESTA? -Objetivo
+Demostrar mis habilidades como diseñadora en distintos ambitos a potenciales clientes o empleadores.
+
+## ¿PARA QUIENES ES ESTA PROPUESTA? -Cliente
+Para
+
+
 <!--
 **trini-mf/trini-mf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
