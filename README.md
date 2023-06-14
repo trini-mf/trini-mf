@@ -6,6 +6,15 @@ Demostrar mis habilidades como diseñadora en distintos ambitos a potenciales cl
 ## ¿PARA QUIENES ES ESTA PROPUESTA? -Cliente
 Para
 
+## Referentes
+https://www.aromialimentari.it/
+https://www.ilgrecale.com/
+https://noiseagency.ie/
+https://www.weareathlon.com/
+https://angle2.agency/
+https://www.portfoliobox.net/es/designers
+
+https://startbootstrap.com/previews/agency
 
 <!--
 **trini-mf/trini-mf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
