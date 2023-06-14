@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!--En la siguiente línea voy por el estilo CSS que ofrece Bootstrap-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous" />
+        <!--entre medio lo de google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:wght@300;400;600&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"
+            rel="stylesheet" />
+        <!--estilo CSS que puede conmplementar o contradecir-->
+        <style>
+            :root {
+                --bs-body-font-family: "Roboto", sans-serif;
+            }
+            a {
+                font-weight: 600;
+            }
+            section {
+                scroll-margin-top: 50px;
+            }
+            nav {
+                backdrop-filter: blur(0.5rem);
+            }
+            #foto {
+                background: transparent
+                    img/'fondo fruba.jpg'
+                background-size: cover;
+                color: black;
+            }
+            footer {
+                background: #bfb7a8;
+            }
+            p.fs-4 {
+                text-shadow: #04012d;
+            }
+            
+        </style>
+        <title>Trinidad Montalbetti</title>
+    </head>
+    <body>
+
+        
+        <!--Barra de navegación fija al tope-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"
+                    >Trinidad Montalbetti</a
+                >
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lasEspecialidades"
+                                >Especialidades</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#losTrabajos">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lasOpiniones"
+                                >Trabajos</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#losContactos"
+                                >Contactos</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Encabezado-->
+        <header class="vh-100" id="foto">
+            <div
+                class="position-absolute top-50 start-50 translate-middle w-50">
+                <p class="fs-3">
+                    Soy estudiante de Diseño en la Universidad Catolica, donde he desarrollado un enfoque integral de la carrera. Sin embargo, me he
+                    <a href="#lasEspecialidades" class="link-dark"
+                        >especializado en diseño de producto, editorial e
+                        industrial</a
+                    >.
+                </p>
+            </div>
+        </header>
+        <!--Los símbolos en este SVG escondido serán reutilizados más abajo-->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="caja" viewBox="0 0 16 16">
+                <path
+                    fill-rule="evenodd"
+                    d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.01-.003.268-.108a.75.75 0 0 1 .558 0l.269.108.01.003 6.97 2.789ZM10.404 2 4.25 4.461 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339L8 5.961 5.596 5l6.154-2.461L10.404 2Z" />
+            </symbol>
+            <symbol id="libro" viewBox="0 0 16 16">
+                <path
+                    d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+            </symbol>
+            <symbol id="edificio" viewBox="0 0 16 16">
+                <path
+                    d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5v-3zM3 4v2h4.5V4H3zm5.5 0v2H13V4H8.5zM3 10v2h4.5v-2H3zm5.5 0v2H13v-2H8.5zM1 1v2h3.5V1H1zm4.5 0v2h5V1h-5zm6 0v2H15V1h-3.5zM1 7v2h3.5V7H1zm4.5 0v2h5V7h-5zm6 0v2H15V7h-3.5zM1 13v2h3.5v-2H1zm4.5 0v2h5v-2h-5zm6 0v2H15v-2h-3.5z" />
+            </symbol>
+            <symbol id="ilust" viewBox="0 0 30 20">
+                <path
+                 d="m17.31,15c3.845,0,5.76,4.029,6.607,6.695.364,1.147-.521,2.305-1.748,2.305h-4.264c-2.38,0-4.905-2.015-4.905-4.5,0-2.485,1.93-4.5,4.31-4.5ZM1.172,19.119c-.75.75-1.172,1.768-1.172,2.828v2.053h2.053c1.061,0,2.078-.421,2.828-1.172l13.43-13.43-3.71-3.71L1.172,19.119ZM23.232.768c-1.024-1.024-2.685-1.024-3.71,0l-3.507,3.507,3.71,3.71,3.507-3.507c1.024-1.024,1.024-2.685,0-3.71ZM.768,4.478C-.256,3.454-.256,1.793.768.768,1.793-.256,3.454-.256,4.478.768l5.899,6.317-3.71,3.71L.768,4.478Z"/>
+            </symbol>
+        </svg>
+        <!--Sección de #lasEspecialidades-->
+        <section class="bg-light" id="lasEspecialidades">
+            <div class="container py-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h2 class="h4 fw-bolder">
+                            <svg
+                                class="me-1 mb-1"
+                                width="1em"
+                                height="1em"
+                                fill="#FF69B4">
+                                <use href="#caja"></use>
+                            </svg>
+                            Diseño de producto
+                        </h2>
+                        <p>
+                            El diseño de productos consta de la relalización de un producto de inicio a fin, contemplando procesos como el de investigación, generar ideas, crear conceptos, prototipos y producto final.
+                        </p>
+                        <small>#producto</small>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h2 class="h4 fw-bolder">
+                            <svg
+                                class="me-1 mb-1"
+                                width="1em"
+                                height="1em"
+                                fill="#FF69B4">
+                                <use href="#libro"></use>
+                            </svg>
+                            Diseño editorial
+                        </h2>
+                        <p>
+                            Se centra en en la creación y producción de toda clase de publicaciones editoriales como, por ejemplo, libros, revistas o periódicos, entre otros. Es decir, se encarga de la arquitectura y de la gráfica editorial de cualquier tipo de publicación.
+                        </p>
+                        <small>#editorial</small>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h2 class="h4 fw-bolder">
+                            <svg
+                                class="me-1 mb-1"
+                                width="1em"
+                                height="1em"
+                                fill="#FF69B4">
+                                <use href="#edificio"></use>
+                            </svg>
+                            Diseño industrial
+                        </h2>
+                        <p>
+                            Crear, dimensionar, estructurar y gestionar proyectos que busquen la innovación y desarrollo de productos haciendo uso de conocimientos en factor humano (ergonomía, percepción, emoción e interacción), producción, tecnología y entorno.
+                        </p>
+                        <small>#industrial</small>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h2 class="h4 fw-bolder">
+                            <svg
+                                class="me-1 mb-1"
+                                width="1em"
+                                height="1em"
+                                fill="#FF69B4">
+                                <use href="#ilust"></use>
+                            </svg>
+                            Ilustración
+                        </h2>
+                        <p>
+                            Creación de elementos gráficos en distintos medios, ya sea digital o sustratos físicos varios.
+                        </p>
+                        <small>#ilustración</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Sección de #losTrabajos-->
+        <section class="border-top border-bottom" id="losTrabajos">
+            <div class="container py-5">
+                <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+                    id="trabajos"></div>
+            </div>
+        </section>
+        <!--Sección de #lasOpiniones-->
+        <section class="bg-light" id="lasOpiniones">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Proyectos externos</h2>
+                    <p class="lead mb-0">Algunos trabajos realizados fuera de la escuela.</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 mx-auto">
+                        <!-- Primer comentario-->
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <p class="mb-1">
+                                    😁 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In id ipsum at est
+                                    venenatis vulputate et eu nibh. Curabitur
+                                    quis orci in tellus tempus semper.
+                                </p>
+                                <div class="small text-muted text-end">
+                                    — Ángel García
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Segundo comentario-->
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <p class="mb-1">
+                                    🤯 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In id ipsum at est
+                                    venenatis vulputate et eu nibh. Curabitur
+                                    quis orci in tellus tempus semper.
+                                </p>
+                                <div class="small text-muted text-end">
+                                    — Nombre de quien lo dice
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tercer comentario-->
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body p-4">
+                                <p class="mb-1">
+                                    😌 Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In id ipsum at est
+                                    venenatis vulputate et eu nibh. Curabitur
+                                    quis orci in tellus tempus semper.
+                                </p>
+                                <div class="small text-muted text-end">
+                                    — Nombre de quien lo dice
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Listo, no más comentarios-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Sección de #losContactos-->
+        <section class="border-top border-bottom" id="losContactos">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Contactos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3 class="m-0 fs-5">
+                                    <span class="fs-1">📍</span><br />Dirección
+                                </h3>
+                                <div class="small text-black-50">
+                                    Santiago, Chile
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3 class="m-0 fs-5">
+                                    <span class="fs-1">📧</span><br />Email
+                                </h3>
+                                <div class="small text-black-50">
+                                    <a href="#!">tmontalbetti@uc.cl</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3 class="m-0 fs-5">
+                                    <span class="fs-1">🖥️</span
+                                    ><br />Trayectoria en diseño web
+                                </h3>
+                                <a
+                                    href=""
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal"
+                                    class="small text-black-50"
+                                    >Más info</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Mas info
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Diseño y nuevo medios es un ramo donde he aprendido
+                            distintas herramientas para desarrollo de codigo
+                            fuente. En 8 clases he publicado 8 trabajos con
+                            GitHub Pages.
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-01-dnm"
+                                                target="_blank"
+                                                >HTML5 + CSS3 + p5.js</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-02-dnm"
+                                                target="_blank"
+                                                >HTML5 + CSS3 + p5.js</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-03-dnm"
+                                                target="_blank"
+                                                >HTML5 + CSS3 + p5.js</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-04-dnm"
+                                                target="_blank"
+                                                >Evaluación Nº1</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-05-dnm"
+                                                target="_blank"
+                                                >HTML5 + CSS3 + otras
+                                                bibliotecas de JS</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-06-dnm"
+                                                target="_blank"
+                                                >HTML5 + CSS3 + otras
+                                                bibliotecas de JS</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-07-dnm"
+                                                target="_blank"
+                                                >HTML5 + CSS3 + otras
+                                                bibliotecas de JS</a
+                                            >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>
+                                            <a
+                                                href="https://trini-mf.github.io/clase-08-dnm"
+                                                target="_blank"
+                                                >Evaluación Nº2</a
+                                            >
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- El pie de página-->
+        <footer class="py-4 text-white">
+            <div class="container px-5">
+                <p class="text-center small">
+                    Trinidad Montalbetti &copy; 2023
+                </p>
+            </div>
+        </footer>
+        <!-- Lo que sigue es JavaScript a secas-->
+        <script>
+            async function portfolio() {
+                const consulta = await fetch(
+                    "https://raw.githubusercontent.com/trini-mf/clase-07-dnm/main/datos.json"
+                );
+                const data = await consulta.json();
+                var donde = document.querySelector("#trabajos");
+                data.forEach(function (t, i) {
+                    donde.innerHTML +=
+                        '<article class="col"><div class="card h-100 shadow-sm ' +
+                        t.soporte +
+                        '"><img src="' +
+                        t.fotos[0] +
+                        '" class="card-img-top"><div class="card-body"><h3 class="fs-5"><a href="single.html?nro=' +
+                        i +
+                        '" class="link-secondary">' +
+                        t.nombre +
+                        "</a></h3><p>" +
+                        t.abstract +
+                        '</p></div><div class="card-footer"><small>#' +
+                        t.soporte +
+                        "</small></div></div></article>";
+                });
+            }
+            portfolio().catch((error) => console.error(error));
+        </script>
+        <!-- Lo que sigue es la biblioteca de Bootstrap-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
