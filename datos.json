@@ -1,35 +1,35 @@
 [
     {
         "nombre": "Fruba",
-        "fotos": ["img/fruba1.jpg", "img/fruba2.jpg", "img/fruba3.jpg", "img/fondo fruba.jpg"],
+        "fotos": ["img/fruba/fruba1.jpg", "img/fruba/fruba2.jpg", "img/fruba/fruba3.jpg", "img/fruba/fondo fruba.jpg"],
         "soporte": "producto",
         "abstract": "Producto que busca potenciar el consumo de frutas y la exploración de nuevos sabores en infantes, a través las golosinas y el juego.",
         "texto": "Producto que consta de Golosina compuesta únicamente de frutas horneadas, endulzada con miel, presentada en forma que simula ser el cabello de distintos personajes, sostenida de manera similar a una paleta. A través de la interacción con una entretenida narrativa y diferentes personajes, Fruba busca entregar una experiencia de consumo mucho más lúdica, potenciando el juego y la imaginación. De esta manera, acerca de manera entretenida a los niñxs al sabor de las frutas."
     },
     {
         "nombre": "Fresh Patch",
-        "fotos": ["img/caja.jpg", "img/visualizacion.jpg", "img/contexto nacional.jpg"],
+        "fotos": ["img/fresh patch/caja.jpg", "img/fresh patch/visualizacion.jpg", "img/fresh patch/contexto nacional.jpg"],
         "soporte": "producto",
         "abstract": "Proyecto desarrollado en alianza a 3M",
         "texto": "Freah Patch nace como solución a los desperdicios de alimento en la industria agricola. dado el contexto nacional y su fuerte en la exportación de frutas, se busca reducir el desperdicio de frutas en mal estado, producidas por las emiciones de gas etileno. Es asi como se llega a la propuesta, un parche retardador de maduración de frutas. ESte estaría compuesto de las siguientes partes; parche adhesivo impermeable.+ Almohadilla absorbente de gas etileno en base a permanganato de potasio."
     },
     {
         "nombre": "Nébula",
-        "fotos": ["img/nebula1.jpg", "img/nebula2.jpg"],
+        "fotos": ["img/nebula/nebula1.jpg", "img/nebula/nebula2.jpg"],
         "soporte": "industrial",
         "abstract": "Proyecto que busca amenizar la espera de niños en areas medicas",
         "texto": "Se desarrolla un objeto de atención visual y juego para niños para descontextualizarlos del tiempo de espera estático, a través de una distracción activa, táctil y experimental. Se busca un regulación emocional, desvinculandolos de emociones negativas que nacen de la espera. Generando un espacio de juego espontaneo donde se trabaja la regulación emocional"
     },
     {
         "nombre": "GhostRoom",
-        "fotos": ["img/portada.jpg", "img/lamina 1.jpg", "img/lamina 2.jpg"],
+        "fotos": ["img/ghostroom/portada.jpg", "img/ghostroom/lamina 1.jpg", "img/ghostroom/lamina 2.jpg"],
         "soporte": "producto",
         "abstract": "Juego de mesa basado en la lógica de Pacman y juego de patio el soo",
         "texto": "Juego de tablero donde se eligen personajes y hay que buscar/ pillar a mi oponente. A lo largo del juego se revelan pistas que me ayudan a encontrar al otro jugador. El tablero tiene una lógica modular, por lo que hay múltiples recorridos que se pueden formar. El objetivo del juego es avanzar por el tablero sin ser eliminado por mi oponente."
     },
     {
         "nombre": "Espacio Granel",
-        "fotos": ["img/tabla2.jpg", "img/packaging2.jpg", "img/montaje2.jpg", "img/tabla.jpg"],
+        "fotos": ["img/espacio granel/tabla2.jpg", "img/espacio granel/packaging2.jpg", "img/espacio granel/montaje2.jpg", "img/espacio granel/tabla.jpg"],
         "soporte": "producto",
         "abstract": "Re-branding de marca de productos a granel",
         "texto": "Por medio de una validación experimental, se da cuenta de las debilidades en la marca espacio granel, por lo que se genera una propuesta de renovación de identidad de marca e packaging, además de visualizaciones de carros de venta ambulante."
@@ -43,7 +43,7 @@
     },
     {
         "nombre": "Reflecta",
-        "fotos": ["img/lamina reflecta.jpg", "img/display.JPG", "img/montaje reflecta.jpg"],
+        "fotos": ["img/reflecta/lamina reflecta.jpg", "img/reflecta/display.JPG", "img/reflecta/montaje reflecta.jpg"],
         "soporte": "industrial",
         "abstract": "Lampara construida a lartir de tres materiales",
         "texto": "Se contruye un prototipo final de lámpara  basada en entregar protagonismo a la capacidad que posee una fuente lumínica única de “mutar” al interactuar con elementos externos, evidenciando fenómenos como la reflexión, la generación de sombras, entre otras. De este modo, su forma esférica y rotatoria busca retratar estos cambios y contrastes, y la incidencia que estos tienen en los espacios que habitamos."
@@ -57,7 +57,7 @@
     },
      {
         "nombre": "Acuarelas",
-        "fotos": ["img/chucao.jpg", "img/Pino Coniferae.jpg", "img/avion.jpg", "img/loica.jpg", "img/nonno en finn.jpg", "img/martin pescador_page-0001.jpg", "img/flor del pajaro.jpg", "img/acuarela a puertas cerradas.jpg", "img/pajaro exotico.jpg", "img/proceso chucao.jpg"],
+        "fotos": ["img/acuarelas/chucao.jpg", "img/acuarelas/Pino Coniferae.jpg", "img/acuarelas/avion.jpg", "img/acuarelas/loica.jpg", "img/acuarelas/nonno en finn.jpg", "img/acuarelas/martin pescador_page-0001.jpg", "img/acuarelas/flor del pajaro.jpg", "img/acuarelas/acuarela a puertas cerradas.jpg", "img/acuarelas/pajaro exotico.jpg", "img/acuarelas/proceso chucao.jpg"],
         "soporte": "externos",
         "abstract": "Trabajos varios realizados en acuarela",
         "texto": "Proyectos desarrollados en técnica acuarela."
