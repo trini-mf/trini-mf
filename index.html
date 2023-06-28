@@ -23,7 +23,7 @@
         <style>
             #foto {
                 background: transparent
-                    url("https://picsum.photos/id/36/800/600?blur=8") 0 0
+                    url("https://picsum.photos/id/36/800/600?blur=9") 0 0
                     no-repeat;
                 background-size: cover;
                 color: black;
@@ -423,24 +423,25 @@
                 const consulta = await fetch(
                     "https://raw.githubusercontent.com/trini-mf/trini-mf/main/datos.json"
                 );
-                const data = await consulta.json();
-                var donde = document.querySelector("#trabajos");
-                data.forEach(function (t, i) {
-                    donde.innerHTML +=
-                        '<article class="col"><div class="card h-100 shadow-sm ' +
-                        t.soporte +
-                        '"><img src="' +
-                        t.fotos[0] +
-                        '" class="card-top-img"><div class="card-body"><h3 class="fs-5"><a href="single.html?nro=' +
-                        i +
-                        '" class="link-secondary">' +
-                        t.nombre +
-                        "</a></h3><p>" +
-                        t.abstract +
-                        '</p></div><div class="card-footer"><small>#' +
-                        t.soporte +
-                        "</small></div></div></article>";
-                });
+               const data = await consulta.json();
+var donde = document.querySelector("#trabajos");
+data.forEach(function (t, i) {
+    donde.innerHTML +=
+        '<article class="col"><div class="card h-100 shadow-sm ' +
+        t.soporte +
+        '"><img src="' +
+        t.fotos[0] +
+        '" class="card-top-img" alt=""><div class="card-body"><h3 class="fs-5"><a href="single.html?nro=' +
+        i +
+        '" class="link-secondary">' +
+        t.nombre +
+        "</a></h3><p>" +
+        t.abstract +
+        '</p></div><div class="card-footer"><small>#' +
+        t.soporte +
+        "</small></div></div></article>";
+});
+
             }
 
             portfolio().catch((error) => console.error(error));
