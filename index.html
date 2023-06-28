@@ -423,7 +423,7 @@
                 const consulta = await fetch(
                     "https://raw.githubusercontent.com/trini-mf/trini-mf/main/datos.json"
                 );
-               const data = await consulta.json();
+              const data = await consulta.json();
 var donde = document.querySelector("#trabajos");
 data.forEach(function (t, i) {
     donde.innerHTML +=
@@ -441,6 +441,7 @@ data.forEach(function (t, i) {
         t.soporte +
         "</small></div></div></article>";
 });
+
 
             }
 
