@@ -43,7 +43,7 @@
     },
     {
         "nombre": "Nitro",
-        "fotos": ["img/nitro/logo.jpg", "img/nitro/pastilla.jpg"],
+        "fotos": ["img/nitro/logo.svg", "img/nitro/pastilla.svg"],
         "soporte": "externos",
         "abstract": "Realización de logotipo para empresa consultora de marketing",
         "texto": "Se crea un logotipo para la empresa de consultoría y asesoramiento desde el naming de Nitro."
